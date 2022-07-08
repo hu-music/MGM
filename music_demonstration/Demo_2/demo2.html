@@ -1,0 +1,191 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="demo2/bootstrap.css">
+    <style>
+    html { font-size: 14px; }
+    #title { font-size: 1.3rem; }
+    .page-title { font-size: 1.4rem; font-weight: bold; margin-bottom: 1rem; }
+    html, body {
+      height: 100%;
+      margin: 0;
+    }
+    body {
+      display: flex; 
+      flex-direction: column;
+    }
+    td{
+     float:left;
+    }
+    th{
+      width: 0px;
+    }
+    .wrapper {
+      flex-grow: 1;
+    }
+    .audio{
+      border-top:solid 1px rgb(223,226,230);
+      background-color: rgb(247,249,250);
+    }
+    #text{
+      text-align:left;
+      width: 99.3%;
+      margin:0 auto;}
+    </style> 
+    <title>Demo2: Repetition generation and its application in machine composition</title>
+  </head>
+  
+  <body>
+    <nav class="navbar sticky-top navbar-expand navbar-light bg-light border-bottom">
+      <span id="title">
+        The Beauty of Repetition in Machine Composition Scenarios: <strong> Repetition Generation and its Application in Machine Composition</strong>
+      </span>
+    </nav>
+
+    <div class="wrapper" style="overflow-y: auto; text-align: center; width: 100%;max-height: 50%;" >
+        <img src="demo2/Figure4.jpg" alt="Figure4" style="margin: 0 auto; max-width:100%; height: 190%;" />
+    </div>
+  
+    <div class="audio" style="overflow-y: auto;">
+      <div id="text">
+        <p><strong>Instruction:</strong> In this demonstration, we use two examples to validate that 
+          the proposed model can not only generate diverse and beautiful repetitions, but also achieve pleasant and complex melodies.
+          <p><strong>In the first example</strong>, the original motif is made up of four consecutive notes (G#-F-D#-C#) with a downward melodic movement. 
+            <br>
+            Piece A is a TrR dominant version, which delivers a feeling of "pacing back and forth" or "jumping over and over". Although the intervals within each motif are the same, TrR expands the pitch distribution of the melody, causing the oscillation of same pattern at different pitch levels. 
+            <br>
+            Piece B is a StR-TrR-SyR dominant version, which creates melodic waves and emotional ups and downs. The introduction of StR helps to strengthen the original pattern, while SyR brings a distinct melodic direction and richer intervals. Therefore, this piece is no longer a one-way repetition with the descending direction, but intersperses with a number of upward trends. 
+            <br>
+            Piece C is a type even version that applies all five repetition types, which is more coherent and exquisite in melodic and emotional changes. SuR offers slight changes to the original motif, bringing familiarity and freshness. HoR contains a variety of motifs with the same direction of movement and shifting intervals, making the music unrestrained and diverse. Through exquisite combinations, the music expresses complex consciousness and emotions.
+            
+          </p>
+          <p><strong>The second example </strong>is generated based on the "fate motif". 
+            <br>
+            First, the model can generate all kinds of variants of the "fate motif" that appear in the original piece. The appearance of these motifs lays the emotional tone and presents the dominant theme for the entire first movement and even the whole symphony. Therefore, by selecting and combing the generated motifs, we can reproduce a piece of music that is similar to the original work, and even make the generated music express similar feelings. 
+            <br>
+            Second, Piece D is a type-even piece generated from the "fate motif" that delivers distinct feelings compared to the original Beethoven's Fifth Symphony. Specifically, some adjacent motifs with opposite directions of movement naturally form some pairs, creating a feeling of "walking together" or "asking and answering", and the development of the whole music is gentle without huge jumps and turns. Thus, it presents a relaxed,leisurely and humorous feeling. 
+            </p>
+        </p>
+      </div>
+        <div class="page-title">Example 1: Figure (a)</div>
+        <div class="table-responsive">
+          <table class="table">
+            <tbody>
+              <tr>
+                <th class="text-nowrap" scope="row">The original motif <br> of example 1 </th>
+                <td class="small text-right"><audio src="demo2/example1_original_motif.mp3" controls></audio><br>
+                 </td>
+              </tr>
+              <tr>
+                <th class="text-nowrap" scope="row">Source music <br> of the motif </th>
+                <td class="small"><audio src="demo2/example1_original_music.mp3" controls></audio><br>
+                <strong>Main melody of the source music</strong></td>
+                <td class="small"><audio src="demo2/example1_original_music_with_accompaniment.mp3" controls></audio><br>
+                <strong>Main melody of the source music with accompaniment</strong></td>
+              </tr>
+              <tr>
+                <th class="text-nowrap" scope="row">Piece A <br>(TrR dominant)</th>
+                <td class="small"><audio src="demo2/piece_a.mp3" controls></audio><br>
+                  <strong>Piece A</strong></td>
+                <td class="small"><audio src="demo2/piece_a_with_accompaniment.mp3" controls></audio><br>
+                  <strong>Piece A with accompaniment</strong></td>
+              </tr>
+              <tr>
+                <th class="text-nowrap" scope="row">Piece B <br>(StR-TrR-SyR<br> dominant)</th>
+                <td class="small"><audio src="demo2/piece_b.mp3" controls></audio><br>
+                  <strong>Piece B</strong></td>
+                <td class="small"><audio src="demo2/piece_b_with_accompaniment.mp3" controls></audio><br>
+                  <strong>Piece B with accompaniment</strong></td>
+              </tr>
+              <tr>
+                <th class="text-nowrap" scope="row">Piece C <br>(type even: <br> StR+TrR+SuR<br> +HoR+SyR)</th>
+                <td class="small"><audio src="demo2/piece_c.mp3" controls></audio><br>
+                  <strong>Piece C</strong></td>
+                <td class="small"><audio src="demo2/piece_c_with_accompaniment.mp3" controls></audio><br>
+                  <strong>Piece C with accompaniment</strong></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="page-title">Example 2: Figure (b)</div>
+        <div class="table-responsive">
+          <table class="table">
+            <tbody>
+              <tr>
+                <th class="text-nowrap" scope="row">The "Fate Motif" </th>
+                <td class="small"><audio src="demo2/example2_original_motif.mp3" controls></audio><br>
+                 </td>
+              </tr>
+              <tr>
+                <th class="text-nowrap" scope="row">The original piece  </th>
+                <td class="small"><audio src="demo2/example2_original_music.mp3" controls></audio><br>
+                  <strong>Main melody of the original piece</strong></td>
+                <td class="small"><audio src="demo2/example2_original_music_with_accompaniment.mp3" controls></audio><br>
+                  <strong>Main melody of the original piece with accompaniment</strong></td>
+              </tr>
+            </tbody>
+          </table>
+          
+          <table class="table">
+            <tbody>
+              <tr>
+                <th class="text-nowrap" rowspan="5" scope="row">Examples of <br>machine composed <br> motifs that appear in <br>the original piece</th>
+                <th>Strict Repetition<br>(StR)</th>
+                <td class="small"><audio src="demo2/SrR-1.mp3" controls></audio><br>
+                SrR (1) </td>
+                <td class="small"><audio src="demo2/SrR-2.mp3" controls></audio><br>
+                SrR (2) </td>               
+              </tr>
+              <tr>
+                <th>Transpositional Repetition<br>(TrR)</th>
+                <td class="small"><audio src="demo2/TrR-1.mp3" controls></audio><br>
+                TrR (1) </td>     
+                <td class="small"><audio src="demo2/TrR-2.mp3" controls></audio><br>
+                TrR (2) </td>         
+              </tr>
+              <tr>
+                <th>Subsequential Repetition<br>(SuR)<br></th> 
+                <td class="small"><audio src="demo2/SuR-1.mp3" controls></audio><br>
+                SuR (1) </td>    
+                <td class="small"><audio src="demo2/SuR-2.mp3" controls></audio><br>
+                SuR (2) </td>         
+              </tr>
+              <tr>
+                <th>Homodirectional Repetition<br>(HoR)</th>   
+                <td class="small"><audio src="demo2/HoR-1.mp3" controls></audio><br>
+                HoR (1) </td>    
+                <td class="small"><audio src="demo2/HoR-2.mp3" controls></audio><br>
+                HoR (2) </td>              
+              </tr>
+              <tr>
+                <th>Symmetric Repetition<br>(SyR)</th>
+                <td class="small"><audio src="demo2/SyR-1.mp3" controls></audio><br>
+                SyR (1) </td>    
+                <td class="small"><audio src="demo2/SyR-2.mp3" controls></audio><br>
+                SyR (2) </td>               
+              </tr>
+            </tbody>
+          </table>
+
+
+          <table class="table">
+            <tbody>
+              <tr>
+                <th class="text-nowrap" scope="row">Piece D<br>(generated from <br>the "fate motif"<br> but delivers<br> distinct feelings)</th>
+                <td class="small"><audio src="demo2/piece_d.mp3" controls></audio><br>
+                  <strong>Piece D</strong></td>
+                <td class="small"><audio src="demo2/piece_d_with_accompaniment.mp3" controls></audio><br>
+                  <strong>Piece D with accompaniment</strong></td>
+              </tr>
+            </tbody>
+          </table>
+
+        </div>
+  
+
+
+    </div>
+    </body>
+</html>
