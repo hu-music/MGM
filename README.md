@@ -11,10 +11,15 @@ In this section, we describe information of Music Repetition Dataset (MRD) in de
 ## CODE
 
 In this section, we demonstrate the training process of the repetition transformer (R-Transformer). Please see code demonstration (./code/) for the core part and training process of R-Transformer. Some dependencies are necessary to view and run the code:
+  
   • Python 3.6
+  
   • Jupyter notebook
+  
   • Required packages
+    
     – Miditoolkit 
+    
     – Pytorch-fast-transformers
 
 
