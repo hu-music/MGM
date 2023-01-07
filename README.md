@@ -1,6 +1,7 @@
 # The Beauty of Repetition: an Algorithmic Composition Model with Motif-level Repetition Generator and Outline-to-music Generator
 This document is designed to assist with reading supplementary materials of the paper ''The Beauty of Repetition: an Algorithmic Composition Model with Motif-level Repetition Generator and Outline-to-music Generator''. In this document, we describe a dataset named Music Repetition Dataset (MRD) and the code of a novel repetition generation system that includes motif-level repetition generator (MRG) and outline-to-music generator (O2MG). Moreover, we demonstrate that the proposed model can generate very interesting results on pop music and fate motif from the classical music.
 
+Demo:  https://zhejinghu.com/mgm/
 
 ## DATASET
 
