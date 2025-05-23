@@ -5,7 +5,9 @@ Demo:  https://zhejinghu.com/mgm/
 
 ## DATASET
 
-In this section, we describe basic information of Music Repetition Dataset (MRD) in detail. This dataset contains two parts. The first part is motif-level repetitions, which are extracted based on 1,748 complete pop piano songs from [1]. All songs are in 4/4 time signature, and each song is converted into a symbolic sequence following transcription, synchronization, quantization, and analysis. This part contains 562,563 training data and 21,766 test data with the labels of five motif level repetitions. The second part is outline-music pairs, which are extracted based on pop piano songs from [1] and [2]. Please refer to https://connectpolyu-my.sharepoint.com/:f:/g/personal/19045203r_connect_polyu_hk/EiZ6wi6RE15AnEjtrzu--PUBFuWeqwIcPdNXX0XhvxaYUg for the dataset information. 
+In this section, we describe basic information of Music Repetition Dataset (MRD) in detail. This dataset contains two parts. The first part is motif-level repetitions, which are extracted based on 1,748 complete pop piano songs from [1]. All songs are in 4/4 time signature, and each song is converted into a symbolic sequence following transcription, synchronization, quantization, and analysis. This part contains 562,563 training data and 21,766 test data with the labels of five motif level repetitions. The second part is outline-music pairs, which are extracted based on pop piano songs from [1] and [2]. Please refer to 
+https://drive.google.com/drive/folders/1rGZ2b9qPdHnn1NzkhxW9F6iWrgiqcIWc for the dataset information. 
+
 ## CODE
 
 In this section, we demonstrate the training process of the MRG and O2MG. Please see code demonstration (./code/) for the core part and training process. Some dependencies are necessary to view and run the code:
